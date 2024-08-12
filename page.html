@@ -1,0 +1,11 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Interactive Sales Dashboard</title>
+        </head>
+        <body>
+            Div([Div(children=[H1(children='Sales Dashboard with AI Insights', style={'text-align': 'center', 'font-family': 'Verdana', 'margin-bottom': '20px'}), Div(children=[Label(children='Select date:', style={'font-weight': 'bold', 'font-family': 'Verdana', 'margin-right': '10px'}), DatePickerRange(start_date='2024-06-03', end_date='2024-06-28', style={'margin-right': '40px', 'font-family': 'Verdana'}, id='date-picker-range'), Label(children='Select report type:', style={'font-weight': 'bold', 'font-family': 'Verdana', 'margin-right': '10px'}), Dropdown(options=[{'label': 'Total Sales Over Time', 'value': 'sales_over_time'}, {'label': 'Sales by Sales Reps', 'value': 'top_sales_reps'}], value='sales_over_time', style={'width': '300px', 'font-family': 'Verdana'}, id='analysis-type')], style={'display': 'flex', 'align-items': 'center', 'justify-content': 'center', 'margin-bottom': '20px'}), Graph(id='sales-graph', style={'width': '80%', 'margin': '0 auto', 'font-family': 'Verdana'}), Div(children=[Label(children='Ask about trends:', style={'font-weight': 'bold', 'font-family': 'Verdana', 'margin-right': '10px'}), Input(type='text', placeholder='Type your question here...', style={'width': '70%', 'margin-right': '10px', 'font-family': 'Verdana'}, id='ai-query-input'), Button(children='Get AI Insights', id='ai-query-btn', n_clicks=0, style={'font-family': 'Verdana'})], style={'text-align': 'center', 'margin-bottom': '20px'}), Div(id='ai-insights-output', style={'margin-top': '20px', 'font-family': 'Verdana', 'font-size': '16px', 'text-align': 'left', 'padding': '20px', 'border': '1px solid #ddd', 'border-radius': '5px', 'background-color': '#f9f9f9', 'max-width': '100%', 'white-space': 'pre-wrap', 'line-height': '1.6'})], style={'max-width': '80%', 'margin': '0 auto'}), Div(children=[Button(children='Download as PDF', id='download-pdf-btn', n_clicks=0, style={'margin-top': '20px', 'margin-left': 'auto', 'margin-right': 'auto', 'display': 'block', 'font-family': 'Verdana'}), Download(id='download-pdf')], style={'text-align': 'center'})])
+        </body>
+        </html>
+    
